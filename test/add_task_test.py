@@ -2,6 +2,7 @@ import requests
 import allure
 
 
+
 @allure.title("Добавление задания  ")
 def test_add():
     with allure.step("Отправляем валидный запрос на создание задания"):
