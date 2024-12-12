@@ -3,7 +3,7 @@ import allure
 
 
 @allure.title("Добавление задания  ")
-def test_add_1():
+def test_add():
     with allure.step("Отправляем валидный запрос на создание задания"):
         body = {"title": "generated", "completed": False}
         response = requests.post("https://todo-app-sky.herokuapp.com/", json=body)  # noqa: E501
