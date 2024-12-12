@@ -9,6 +9,8 @@ def test_delete():
 
     response.json().get("id")
     response = requests.delete(f'https://todo-app-sky.herokuapp.com/{id}')
+
+    assert response.status_code == 200
     assert response.status_code == 204
 
 
